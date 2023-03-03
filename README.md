@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Compatibility Predictor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a MERN application that allows users to manage a list of applicants and generate compatibility scores for them. The application takes an input of an array of applicants and an array of team members and produces an output of an array of applicants with their respective compatibility score. I have build this application using the MERN stack that provide a solid foundation for building a scalable and efficient application.
 
-## Available Scripts
+## Frontend Part
 
-In the project directory, you can run:
+I have used React to build the frontend of this application. I have created one home page and components for displaying the applicant and team member data, as well as a form for adding new applicants. and used Axios,  to make API requests to the backend and retrieve the compatibility scores for each applicant.
 
-### `npm start`
+## Backend Part
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I have used Node.js and Express to build the backend API for the application. and define routes for handling incoming requests, such as adding a new  list of applicants and team members.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Database Part
 
-### `npm test`
+ MongoDB database to store the applicant and team member data. I used Mongoose, a MongoDB object modeling tool, to define the schema for the data and interact with the database from Node.js.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Compatibility score algorithm:
 
-### `npm run build`
+I have created a function nemed : calculateScore to generate compatibility scores for each applicant based on their relevant factors.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Instruction To run this Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository to your local machine.
+2. Install the dependencies for both the client and server.
+3. add .env file to server folder and add DBURI=mongodb+srv://admi.....  , and  PORT=5000
+4. Start the server: npm run start
+6. Start the client:npm start
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Usage
+To use the application, open a web browser and navigate to http://localhost:3000. You should see a  form for adding new applicants and new team. To generate compatibility scores, you'll need to click the check compatibility button that implement the function for calculating scores based on your specific requirements.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
